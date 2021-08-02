@@ -45,9 +45,11 @@ export default {
     base: '/folders/vue/nuxt-test/'
   },
 
-  target: 'static',
+	// Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+	ssr: true,
 
-  ssr: true,
+	// Target (https://go.nuxtjs.dev/config-target)
+	target: 'static',
 
   generate: {
     fallback: '404.html'
